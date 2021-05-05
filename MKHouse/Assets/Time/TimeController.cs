@@ -6,8 +6,8 @@ public class TimeController : MonoBehaviour
 {
     public static TimeController instance;
 
-    public const int CacheSize = 300;
-    public const float CacheDelta = 0.1f;
+    public const int CacheSize = 100;
+    public const float CacheDelta = 0.2f;
 
     public Stack<ITimeControllable> stack = new Stack<ITimeControllable>();
 
@@ -29,6 +29,7 @@ public class TimeController : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log(maxIndex);
         if (timeIsChanged)
             return;
 
@@ -41,8 +42,9 @@ public class TimeController : MonoBehaviour
             if (maxIndex - minIndex >= CacheSize)
                 minIndex = maxIndex - CacheSize + 1;
 
+            RigidTimeControllable.saveIndex = maxIndex % CacheSize;
             foreach (var controllable in stack)
-                controllable.SaveTime(maxIndex % CacheSize);
+                controllable.SaveTime();
         }
     }
 
@@ -71,12 +73,20 @@ public class TimeController : MonoBehaviour
         float coef = (nowTime % CacheDelta) / CacheDelta;
 
         Debug.Log(firstIndex + "-" + secondIndex + "-" + coef + "-" + nowTime);
+
+        RigidTimeControllable.firstIndex = firstIndex;
+        RigidTimeControllable.secondIndex = secondIndex;
+        RigidTimeControllable.coef = coef;
+
         foreach (var controllable in stack)
-            controllable.GoToTime(firstIndex, secondIndex, coef);
+            controllable.GoToTime(delta);
     }
 
     public void EndTimeChange()
     {
+        maxIndex = Mathf.RoundToInt(nowTime / CacheDelta);
+        timer = nowTime % CacheDelta;
+
         Time.timeScale = 1;
         foreach (var controllable in stack)
             controllable.EndTimeChange();

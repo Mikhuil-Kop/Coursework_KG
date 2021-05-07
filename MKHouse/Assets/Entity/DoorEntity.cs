@@ -12,8 +12,8 @@ public class DoorEntity : Entity
         opened = !opened;
 
         if (opened)
-            animator.Play("DoorOpen");
+            animator.CrossFade("DoorOpen", 0.5f);
         else
-            animator.Play("DoorClose");
+            animator.CrossFade("DoorClose", 0.5f);
     }
 }

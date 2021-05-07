@@ -264,12 +264,12 @@ GameObject:
   - component: {fileID: 74023995}
   - component: {fileID: 74023994}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Entity (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &74023994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,10 +279,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 74023993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc0ab8d3a7fa14a50be358419e4a8e6f, type: 3}
+  m_Script: {fileID: 11500000, guid: c86eedcba40054e8f9190473fa37d41d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  code: 2
+  code: Phone
+  dialogueName: TestDialogue
 --- !u!65 &74023995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -907,7 +908,7 @@ GameObject:
   - component: {fileID: 684353550}
   - component: {fileID: 684353549}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Entity (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,6 +1887,14 @@ PrefabInstance:
       propertyPath: m_Value
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3590481341227086854, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 3590481341835548457, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 8168631556107079924, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
       propertyPath: m_Name
       value: Canvas

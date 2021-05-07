@@ -9,6 +9,6 @@ public class EntityText : ScriptableObject
 
     public static EntityText Load(string code)
     {
-        return Resources.Load<EntityText>(Main.language + "/" + code);
+        return Resources.Load<EntityText>(Main.language + "/EntityTexts/" + code);
     }
 }

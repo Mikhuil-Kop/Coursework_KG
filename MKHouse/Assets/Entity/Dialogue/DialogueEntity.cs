@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     public class DialogueEntity : Entity
     {

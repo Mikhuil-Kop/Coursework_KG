@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     public class ScriptableDialogue : IDialogue
     {

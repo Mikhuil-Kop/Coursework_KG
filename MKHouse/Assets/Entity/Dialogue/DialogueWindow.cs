@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     /// <summary>
     /// Класс, отвечающий за вывод диалога на экран

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     public interface IDialogue
     {

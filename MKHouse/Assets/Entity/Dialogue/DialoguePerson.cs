@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     [CreateAssetMenu(fileName = "New Dialogue Person", menuName = "Dialogue Person", order = 1)]
     public class DialoguePerson : ScriptableObject

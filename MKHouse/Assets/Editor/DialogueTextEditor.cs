@@ -2,7 +2,7 @@
 using UnityEditor;
 using System.Text.RegularExpressions;
 
-namespace UI.Dialogues
+namespace House.Dialogues
 {
     using NodeType = DialogueText.NodeType;
 

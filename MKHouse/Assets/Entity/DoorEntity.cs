@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorEntity : Entity
+namespace House
 {
-    public Animator animator;
-    private bool opened;
-
-    public override void OnInteraction()
+    public class DoorEntity : Entity
     {
-        opened = !opened;
+        public Animator animator;
+        private bool opened;
 
-        if (opened)
-            animator.CrossFade("DoorOpen", 0.5f);
-        else
-            animator.CrossFade("DoorClose", 0.5f);
+        public override void OnInteraction()
+        {
+            opened = !opened;
+
+            if (opened)
+                animator.CrossFade("DoorOpen", 0.5f);
+            else
+                animator.CrossFade("DoorClose", 0.5f);
+        }
     }
+
 }

@@ -1,42 +1,46 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EntityView : MonoBehaviour
+namespace House
 {
-    public static EntityView instance;
 
-    public Text nameText;
-
-    private Entity nowEntity;
-    private EntityText nowText;
-
-
-    private void Awake()
+    public class EntityView : MonoBehaviour
     {
-        instance = this;
-        ClearEntity();
-    }
+        public static EntityView instance;
 
-    private void OnDestroy()
-    {
-        instance = null;
-    }
+        public Text nameText;
+
+        private Entity nowEntity;
+        private EntityText nowText;
 
 
-    public void SetEntity(Entity entity)
-    {
-        gameObject.SetActive(true);
+        private void Awake()
+        {
+            instance = this;
+            ClearEntity();
+        }
 
-        nowEntity = entity;
-        nowText = EntityText.Load(entity.code);
+        private void OnDestroy()
+        {
+            instance = null;
+        }
 
-        nameText.text = nowText.description;
-    }
 
-    public void ClearEntity()
-    {
-        gameObject.SetActive(false);
-        nowEntity = null;
-        nowText = null;
+        public void SetEntity(Entity entity)
+        {
+            gameObject.SetActive(true);
+
+            nowEntity = entity;
+            nowText = EntityText.Load(entity.code);
+
+            nameText.text = nowText.description;
+        }
+
+        public void ClearEntity()
+        {
+            gameObject.SetActive(false);
+            nowEntity = null;
+            nowText = null;
+        }
     }
 }

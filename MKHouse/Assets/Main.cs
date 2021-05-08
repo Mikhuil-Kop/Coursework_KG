@@ -7,7 +7,6 @@ using UnityEngine;
 
 namespace House
 {
-
     [SettingClass]
     public class Main : MonoBehaviour
     {
@@ -26,8 +25,22 @@ namespace House
             instance = null;
         }
 
-        public void SetSettings(SettingField[] fields)
+        public void SaveSettings(SettingField[] fields)
         {
+            foreach (var field in fields)
+                field.info.SetValue(null, field.newValue);
+
+            //foreach (var field in fields)
+            //    {
+            //        if (field.newValue is bool)
+            //            PlayerPrefs.SetInt(1, field.info.name);
+            //    }
+        }
+
+        public void ApplySettings()
+        {
+            var fields = GetAllSettingFields();
+
             for (int i = 0; i < fields.Length; i++)
             {
                 fields[i].info.SetValue(null, fields[i].newValue);
@@ -35,15 +48,14 @@ namespace House
             }
         }
 
-
-        public SettingField[] GetAllSettings()
+        public SettingField[] GetAllSettingFields()
         {
             Stack<SettingField> stack = new Stack<SettingField>();
 
             var assembly = Assembly.GetExecutingAssembly();
             foreach (Type type in assembly.GetTypes())
             {
-                if (type.GetCustomAttribute<SettingClassAttribute>(true) != null)
+                if (type.GetCustomAttribute<SettingClassAttribute>(true) == null)
                     continue;
 
                 var rawFields = type.GetFields(BindingFlags.Static | BindingFlags.Public);
@@ -56,7 +68,8 @@ namespace House
                     stack.Push(new SettingField
                     {
                         info = field,
-                        attribute = attribute
+                        attribute = attribute,
+                        newValue = field.GetValue(null)
                     });
                 }
             }

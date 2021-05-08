@@ -19,5 +19,4 @@ namespace House
                 animator.CrossFade("DoorClose", 0.5f);
         }
     }
-
 }

@@ -1,53 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using House.Menu;
 
-public class Character : MonoBehaviour
+
+namespace House
 {
-    public Camera cam;
-    public float sensivityX, sensivityY, speed;
-    public static bool active = true;
-
-    private void Awake()
+    [SettingClass]
+    public class Character : MonoBehaviour
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        active = true;
-    }
+        public Camera cam;
+        [SettingValue(Submenu.controll, "sensX", false)]
+        public static float sensivityX;
+        [SettingValue(Submenu.controll, "sensY", false)]
+        public static float sensivityY;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        [SettingValue(Submenu.controll, "invertX", false)]
+        public static bool invertX;
+        [SettingValue(Submenu.controll, "invertY", false)]
+        public static bool invertY;
+
+        public float speed;
+
+        public static bool active = true;
+
+        private void Awake()
         {
-            active = !active;
-            if (active)
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            active = true;
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                active = !active;
+                if (active)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
+                else
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                }
+            }
 
-        if (!active)
-            return;
 
-        float mouseX = Input.GetAxis("Mouse X") * sensivityX;
-        float mouseY = Input.GetAxis("Mouse Y") * sensivityY;
+            if (!active)
+                return;
 
-        transform.Rotate(Vector3.up, mouseX);
-        cam.transform.Rotate(Vector3.left, mouseY);
+            float mouseX = Input.GetAxis("Mouse X") * sensivityX;
+            float mouseY = Input.GetAxis("Mouse Y") * sensivityY;
 
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
-        Vector3 move = new Vector3(moveX, 0, moveY);
+            transform.Rotate(Vector3.up, mouseX);
+            cam.transform.Rotate(Vector3.left, mouseY);
 
-        move = move.normalized * Mathf.Min(move.magnitude, 1);
+            float moveX = Input.GetAxis("Horizontal");
+            float moveY = Input.GetAxis("Vertical");
+            Vector3 move = new Vector3(moveX, 0, moveY);
 
-        transform.Translate(move * Time.unscaledDeltaTime * speed);
+            move = move.normalized * Mathf.Min(move.magnitude, 1);
+
+            transform.Translate(move * Time.unscaledDeltaTime * speed);
+        }
     }
 }

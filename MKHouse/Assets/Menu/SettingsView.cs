@@ -20,7 +20,7 @@ namespace House.Menu
         private void Start()
         {
             instance = this;
-            fields = Main.instance.GetAllSettings();
+            fields = Main.instance.GetAllSettingFields();
             SetActive(false);
 
             foreach (Transform transform in submenuContainer.transform)
@@ -56,6 +56,7 @@ namespace House.Menu
             {
                 view.gameObject.SetActive(false);
                 settingsContainer.gameObject.SetActive(false);
+                Main.instance.SaveSettings(fields);
             }
         }
 
@@ -80,7 +81,7 @@ namespace House.Menu
         }
     }
 
-    public struct SettingField
+    public class SettingField
     {
         public FieldInfo info;
         public SettingValueAttribute attribute;
@@ -90,6 +91,6 @@ namespace House.Menu
 
     public enum Submenu : byte
     {
-        main = 0, window = 1, aaa = 2
+        main = 0, window = 1, controll = 2
     }
 }

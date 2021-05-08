@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace House
 {
-
+    [SettingClass]
     public class Entity : MonoBehaviour
     {
         public string code;
@@ -29,12 +29,5 @@ namespace House
         {
             EntityView.instance.ClearEntity();
         }
-
-        [SettingValue(Submenu.main, "a", false)]
-        public static bool A;
-        [SettingValue(Submenu.main, "b", false)]
-        public static bool B;
-        [SettingValue(Submenu.main, "c", false)]
-        public static bool C;
     }
 }

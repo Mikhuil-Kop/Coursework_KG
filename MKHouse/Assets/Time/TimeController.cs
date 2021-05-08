@@ -29,7 +29,6 @@ public class TimeController : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(maxIndex);
         if (timeIsChanged)
             return;
 

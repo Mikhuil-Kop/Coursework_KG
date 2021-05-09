@@ -15,6 +15,11 @@ public class RigidTimeControllable : MonoBehaviour, ITimeControllable
 
     private void Start()
     {
+        if (col == null)
+            col = GetComponent<Collider>();
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+
         TimeController.instance.stack.Push(this);
         SaveTime();
     }

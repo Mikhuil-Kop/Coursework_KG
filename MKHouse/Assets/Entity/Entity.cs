@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace House
 {
-    [SettingClass]
     public class Entity : MonoBehaviour
     {
         public string code;

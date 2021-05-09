@@ -71,7 +71,7 @@ public class TimeController : MonoBehaviour
         int secondIndex = (i + 1) % CacheSize;
         float coef = (nowTime % CacheDelta) / CacheDelta;
 
-        Debug.Log(firstIndex + "-" + secondIndex + "-" + coef + "-" + nowTime);
+        //Debug.Log(firstIndex + "-" + secondIndex + "-" + coef + "-" + nowTime);
 
         RigidTimeControllable.firstIndex = firstIndex;
         RigidTimeControllable.secondIndex = secondIndex;

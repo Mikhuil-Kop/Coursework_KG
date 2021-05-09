@@ -17,12 +17,12 @@ namespace House.Dialogues
         private int charsBeforeVoice = 3;
 
         private string textString = "", nameString = "";
-        private Sprite face;
+        private Color color;
         private bool waiting = false, finished = false;
 
         public string TextString => textString;
         public string NameString => nameString;
-        public Sprite Face => face;
+        public Color NameColor => color;
         public bool Finished => finished;
 
         public ScriptableDialogue(string fileName)
@@ -129,7 +129,7 @@ namespace House.Dialogues
         {
             person = Resources.Load<DialoguePerson>(Main.language + "/DialoguePersons/" + name);
             nameString = person.personName;
-            face = person.face;
+            color = person.color;
         }
 
         protected virtual void EmotionComand(string animationName)

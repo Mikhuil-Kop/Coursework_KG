@@ -79,8 +79,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 4657389077172396775}
-  sensivityX: 1.3
-  sensivityY: 1.3
   speed: 1.3
 --- !u!114 &3631645325104032418
 MonoBehaviour:
@@ -203,8 +201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4657389077315879814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
-  m_LocalScale: {x: 0.4, y: 1, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.85, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4657389076827022681}
   m_RootOrder: 1

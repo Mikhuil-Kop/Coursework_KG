@@ -7,7 +7,7 @@ namespace House.Dialogues
         string TextString { get; }
         string NameString { get; }
         bool Finished { get; }
-        Sprite Face { get; }
+        Color NameColor { get; }
 
         void Tick();
     }

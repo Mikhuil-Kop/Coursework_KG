@@ -17,9 +17,7 @@ namespace House.Dialogues
         [SerializeField]
         GameObject view;
         [SerializeField]
-        Text text, nameText;
-        [SerializeField]
-        Image face;
+        Text text;
         [SerializeField]
         AudioSource voiceSource;
 
@@ -43,8 +41,6 @@ namespace House.Dialogues
         {
             dialogue = new ScriptableDialogue(fileName);
             text.text = "";
-            nameText.text = "";
-            face.sprite = null;
             Show();
         }
 
@@ -94,9 +90,8 @@ namespace House.Dialogues
             }
 
             dialogue.Tick();
-            text.text = dialogue.TextString;
-            nameText.text = dialogue.NameString;
-            face.sprite = dialogue.Face;
+            text.text = $"<color=#{ColorUtility.ToHtmlStringRGBA(dialogue.NameColor)}>{dialogue.NameString}</color>: {dialogue.TextString}";
+            //
         }
 
         [System.Serializable]

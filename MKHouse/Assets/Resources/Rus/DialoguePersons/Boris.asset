@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e407a58aa9d844d74ba8501c6f4061c5, type: 3}
   m_Name: Boris
   m_EditorClassIdentifier: 
-  face: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  color: {r: 0, g: 1, b: 0.33982182, a: 1}
   personName: "\u0411\u043E\u0440\u0438\u0441"
   voice: {fileID: 0}

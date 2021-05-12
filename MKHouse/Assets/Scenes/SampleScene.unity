@@ -629,45 +629,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 116279011, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 116279011, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 116279011, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 399157396, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 399157396, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 399157396, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 866981768, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 866981768, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1495873013, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1495873013, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 3419232569604045256, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7066893968048196053, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -675,19 +639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066893968048196053, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066893968048196053, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8168631556107079924, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8168631556107079924, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8168631556107079928, guid: f6fba846a98c040b6b0edb877a820f2f, type: 3}
       propertyPath: m_Pivot.x

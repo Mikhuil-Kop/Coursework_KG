@@ -5,23 +5,21 @@ using UnityEngine;
 
 namespace House.Menu
 {
-    public class SettingsView : MonoBehaviour
+    public class SettingsView : View
     {
         public static SettingsView instance;
 
-        public RectTransform view, submenuContainer, settingsContainer;
+        public RectTransform submenuContainer, settingsContainer;
         public SubmenuNode submenuPrefab;
         public SettingNode settingsPrefab;
 
         private SettingField[] fields;
-        private bool active;
-
 
         private void Start()
         {
             instance = this;
             fields = Main.instance.GetAllSettingFields();
-            SetActive(false);
+            Hide();
 
             foreach (Transform transform in submenuContainer.transform)
                 Destroy(transform.gameObject);
@@ -31,33 +29,26 @@ namespace House.Menu
                     GetComponent<SubmenuNode>().SetSubmenu(s);
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-                SetActive(!active);
-        }
-
         private void OnDestroy()
         {
             instance = null;
         }
 
-        public void SetActive(bool active)
+        public override void Show(View parent)
         {
-            gameObject.transform.position = gameObject.transform.position;
-            this.active = active;
+            base.Show(parent);
 
-            if (active)
-            {
-                view.gameObject.SetActive(true);
-                settingsContainer.gameObject.SetActive(false);
-            }
-            else
-            {
-                view.gameObject.SetActive(false);
-                settingsContainer.gameObject.SetActive(false);
-                Main.instance.SaveSettings(fields);
-            }
+            gameObject.SetActive(true);
+            settingsContainer.gameObject.SetActive(false);
+        }
+
+        public override void Hide()
+        {
+            base.Hide();
+
+            gameObject.SetActive(false);
+            settingsContainer.gameObject.SetActive(false);
+            Main.instance.SaveSettings(fields);
         }
 
         public void GoToSubmenu(Submenu submenu)
@@ -91,6 +82,6 @@ namespace House.Menu
 
     public enum Submenu : byte
     {
-        main = 0, window = 1, controll = 2
+        main = 0, keys = 1, controll = 2
     }
 }

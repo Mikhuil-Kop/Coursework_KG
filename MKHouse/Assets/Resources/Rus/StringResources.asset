@@ -21,6 +21,8 @@ MonoBehaviour:
     value: "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435"
   - key: controll_submenu
     value: "\u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"
+  - key: keys_submenu
+    value: "\u041A\u043B\u0430\u0432\u0438\u0448\u0438"
   - key: lang_setting
     value: "\u042F\u0437\u044B\u043A"
   - key: sensX_setting
@@ -35,3 +37,16 @@ MonoBehaviour:
   - key: invertY_setting
     value: "\u0418\u043D\u0432\u0435\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C
       \u043F\u043E \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u0438"
+  - key: timespeed_setting
+    value: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+      \u0432\u0440\u0435\u043C\u0435\u043D\u0435\u043C"
+  - key: settings_button
+    value: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+  - key: continue_button
+    value: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+  - key: exit_button
+    value: "\u0412\u044B\u0439\u0442\u0438"
+  - key: save_button
+    value: "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+  - key: load_button
+    value: "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C"

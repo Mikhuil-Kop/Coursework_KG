@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using House.Menu;
 
+[SettingClass]
 public class TimeController : MonoBehaviour
 {
     public static TimeController instance;
+
+    [SettingValue(Submenu.controll, "timespeed", false)]
+    public static float speed = 6;
 
     public const int CacheSize = 100;
     public const float CacheDelta = 0.2f;
@@ -29,8 +34,21 @@ public class TimeController : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            timeIsChanged = !timeIsChanged;
+
+            if (timeIsChanged)
+                StartTimeChange();
+            else
+                EndTimeChange();
+        }
+
         if (timeIsChanged)
+        {
+            ChangeTime(Input.mouseScrollDelta.y * speed / 100);
             return;
+        }
 
         timer += Time.deltaTime;
         if (timer >= CacheDelta)
@@ -90,4 +108,5 @@ public class TimeController : MonoBehaviour
         foreach (var controllable in stack)
             controllable.EndTimeChange();
     }
+
 }

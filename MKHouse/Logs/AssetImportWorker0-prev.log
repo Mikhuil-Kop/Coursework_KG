@@ -12,50 +12,50 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56607
+60576
 Successfully changed project path to: /Users/mikekopotov/Desktop/Курсовая КГ/MKHouse
 /Users/mikekopotov/Desktop/Курсовая КГ/MKHouse
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.90 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 27.54 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/mikekopotov/Desktop/Курсовая КГ/MKHouse/Assets
 GfxDevice: creating device client; threaded=0
-2021-05-13 14:47:40.580 Unity[5492:380471] iMac preferred device: AMD Radeon Pro 570 (high power)
-2021-05-13 14:47:40.580 Unity[5492:380471] Metal devices available: 1
-2021-05-13 14:47:40.580 Unity[5492:380471] 0: AMD Radeon Pro 570 (high power)
-2021-05-13 14:47:40.580 Unity[5492:380471] Using device AMD Radeon Pro 570 (high power)
+2021-05-16 11:53:39.124 Unity[67175:256822] iMac preferred device: AMD Radeon Pro 570 (high power)
+2021-05-16 11:53:39.124 Unity[67175:256822] Metal devices available: 1
+2021-05-16 11:53:39.124 Unity[67175:256822] 0: AMD Radeon Pro 570 (high power)
+2021-05-16 11:53:39.124 Unity[67175:256822] Using device AMD Radeon Pro 570 (high power)
 Initializing Metal device caps: AMD Radeon Pro 570
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56175
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000720 seconds.
+Registered in 0.000698 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 23.91 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 29.38 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.470 seconds
+- Completed reload, in  1.508 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000464 seconds.
+Registered in 0.000595 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  1.125 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -63,112 +63,24 @@ Launching external process: /Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1165 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.0 MB.
-System memory in use after: 138.1 MB.
+Unloading 1166 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.1 MB.
+System memory in use after: 138.2 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1628.
-Total: 2.438962 ms (FindLiveObjects: 0.155764 ms CreateObjectMapping: 0.043635 ms MarkObjects: 2.157613 ms  DeleteObjects: 0.080700 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-6.exr
-  artifactKey: Guid(8cc769fdb0169432faaa4be74b80fad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-6.exr using Guid(8cc769fdb0169432faaa4be74b80fad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090d45d16f19f13881e6853de272ed50') in 1.308126 seconds
-  Import took 1.310554 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 2.579794 ms (FindLiveObjects: 0.168107 ms CreateObjectMapping: 0.064522 ms MarkObjects: 2.218224 ms  DeleteObjects: 0.127801 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-0.exr
-  artifactKey: Guid(245be451fd76d464095d0512fb3ff918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-0.exr using Guid(245be451fd76d464095d0512fb3ff918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dedb369874dbe410a2de3f012442372') in 0.013127 seconds
-  Import took 0.015271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-1.exr
-  artifactKey: Guid(4ce9b801b777346bd94b4b6bc351c063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-1.exr using Guid(4ce9b801b777346bd94b4b6bc351c063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb4dd7336d259cc00f31e59e051a05e7') in 0.020427 seconds
-  Import took 0.023180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr
-  artifactKey: Guid(ede1009bd4d01471e97cb76254c6b121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/Lightmap-0_comp_light.exr using Guid(ede1009bd4d01471e97cb76254c6b121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e123adf5f87dce4d3873f73945d5c42') in 0.041659 seconds
-  Import took 0.044762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Scenes/SampleScene/Lightmap-0_comp_shadowmask.png
-  artifactKey: Guid(79583c6ad7e44478bb81ecedf287a580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/Lightmap-0_comp_shadowmask.png using Guid(79583c6ad7e44478bb81ecedf287a580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b183b9de6693b07bed9351c6986531e') in 0.731382 seconds
-  Import took 0.733754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-2.exr
-  artifactKey: Guid(e9f38ffc0509643c99b4b0c3d03c71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-2.exr using Guid(e9f38ffc0509643c99b4b0c3d03c71cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96065bdbd52e6bcb6f38d71c29a6e050') in 0.014428 seconds
-  Import took 0.016599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Scenes/SampleScene/LightingData.asset
-  artifactKey: Guid(8526c46a0b5fe4f2ab37c1e73d8aeaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/LightingData.asset using Guid(8526c46a0b5fe4f2ab37c1e73d8aeaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a7606eb1620c639057fd0846680599') in 0.794546 seconds
-  Import took 0.798422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-4.exr
-  artifactKey: Guid(ffabdc7a69fb94121846850117da2cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-4.exr using Guid(ffabdc7a69fb94121846850117da2cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b8aebc0d0fadccdb40dc8c1f33f3f6') in 0.011881 seconds
-  Import took 0.013784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001698 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-7.exr
-  artifactKey: Guid(f725a77ea44c440008b93c3ab03f6e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-7.exr using Guid(f725a77ea44c440008b93c3ab03f6e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffbff8cee968cf3023b215ac990c741') in 0.015858 seconds
-  Import took 0.031993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004714 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-5.exr
-  artifactKey: Guid(6ccefc1c70b864c19845026d73856a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-5.exr using Guid(6ccefc1c70b864c19845026d73856a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa0173457b24d8877a8fdcf11997a4a') in 0.010464 seconds
-  Import took 0.014826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.017159 seconds.
-  path: Assets/Scenes/SampleScene/Lightmap-0_comp_dir.png
-  artifactKey: Guid(7bc11cd511fcd4e1294699a852f59846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/Lightmap-0_comp_dir.png using Guid(7bc11cd511fcd4e1294699a852f59846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e42889b0852aacb8d43e56c0f3d86cb') in 0.010557 seconds
-  Import took 0.012587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Scenes/SampleScene/ReflectionProbe-3.exr
-  artifactKey: Guid(16a37ebd38eba4627a3c2387b0d6682e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/ReflectionProbe-3.exr using Guid(16a37ebd38eba4627a3c2387b0d6682e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4d4e928b4c4e5bdd7a3ff851ea1ec0') in 0.011441 seconds
-  Import took 0.013863 seconds .
+  path: Assets/3D/Special Materials/jj_door_3_white.prefab
+  artifactKey: Guid(bc131f40f28c0418e9246e51de21fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Special Materials/jj_door_3_white.prefab using Guid(bc131f40f28c0418e9246e51de21fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328109bc69ffebde4693b74e352a07a0') in 1.396760 seconds
+  Import took 1.461342 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000626 seconds.
+Registered in 0.000338 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.22 ms, found 1 plugins.
@@ -177,21 +89,29 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.040 seconds
+- Completed reload, in  1.003 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.0 MB.
-System memory in use after: 155.0 MB.
+Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.9 MB.
+System memory in use after: 143.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1666.
-Total: 2.165394 ms (FindLiveObjects: 0.205335 ms CreateObjectMapping: 0.058263 ms MarkObjects: 1.825202 ms  DeleteObjects: 0.075298 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1631.
+Total: 1.832590 ms (FindLiveObjects: 0.242163 ms CreateObjectMapping: 0.074492 ms MarkObjects: 1.461734 ms  DeleteObjects: 0.053405 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.982921 seconds.
+  path: Assets/3D/Special Materials/DoorScript.cs
+  artifactKey: Guid(d185eff6fd63e429691df00754c16036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Special Materials/DoorScript.cs using Guid(d185eff6fd63e429691df00754c16036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32f4191213eb7a239edbda2d08c8a46') in 3.415314 seconds
+  Import took 3.444753 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000437 seconds.
+Registered in 0.000403 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.21 ms, found 1 plugins.
@@ -200,14 +120,14 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.980 seconds
+- Completed reload, in  0.959 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.4 MB.
-System memory in use after: 155.5 MB.
+System memory in use before: 147.5 MB.
+System memory in use after: 147.6 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1668.
-Total: 1.592648 ms (FindLiveObjects: 0.211823 ms CreateObjectMapping: 0.034952 ms MarkObjects: 1.295682 ms  DeleteObjects: 0.049235 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.618465 ms (FindLiveObjects: 0.211090 ms CreateObjectMapping: 0.034335 ms MarkObjects: 1.323016 ms  DeleteObjects: 0.049142 ms)
 
